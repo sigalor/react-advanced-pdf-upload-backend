@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "file",
+    "resolution"
+  ],
+  "properties": {
+    "file": {
+      "type": "string",
+      "description": "Base64 representation of this PDF file (or a Buffer object for the JS function)"
+    },
+    "resolution": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}
