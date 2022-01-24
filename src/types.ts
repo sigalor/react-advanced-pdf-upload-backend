@@ -22,5 +22,11 @@ export type RenderPdfData = {
 };
 
 export type RenderPdfOutput = {
-  pages: string[]; // base64-encoded PNGs
+  pages: {
+    uri: string; // base64-encoded PNG (data URIs, i.e. they start with "data:image/png;base64,..."")
+    dimensions: {
+      width: number;
+      height: number;
+    };
+  }[];
 };
