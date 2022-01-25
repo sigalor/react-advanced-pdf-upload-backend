@@ -54,15 +54,13 @@
                   "properties": {
                     "type": {
                       "enum": [
-                        "degrees"
+                        "rotate"
                       ]
                     },
                     "degrees": {
                       "enum": [
-                        0,
-                        90,
-                        180,
-                        270
+                        -90,
+                        90
                       ]
                     }
                   }

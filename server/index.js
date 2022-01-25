@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { Validator } = require('express-json-validator-middleware');
+const { Validator, ValidationError } = require('express-json-validator-middleware');
 
 const { methods, schemas } = require('../dist');
 
@@ -19,6 +19,16 @@ app.post('/render-pdf', validate({ body: schemas.renderPdf }), async (req, res) 
 app.post('/build-pdf', validate({ body: schemas.buildPdf }), async (req, res) => {
   res.contentType('application/pdf');
   res.send(await methods.buildPdf(req.body));
+});
+
+app.use((error, request, response, next) => {
+  if (error instanceof ValidationError) {
+    console.log(error.validationErrors);
+    response.status(422).send(error.validationErrors);
+    next();
+  } else {
+    next(error);
+  }
 });
 
 app.listen(port, () => {

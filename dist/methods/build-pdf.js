@@ -13,13 +13,11 @@ async function buildPdf(data) {
             throw new Error('page index out of range: ' + pageDef.origin.file);
         }
         let newPage = await ghostscript_node_1.default.extractPDFPages(data.files[pageDef.origin.file], pageDef.origin.page + 1, pageDef.origin.page + 1);
-        for (const generalModDef of (_a = pageDef.modifications) !== null && _a !== void 0 ? _a : []) {
-            if (generalModDef.type === 'rotate') {
-                const modDef = generalModDef;
-                if (modDef.degrees !== 0) {
-                    newPage = await ghostscript_node_1.default.rotatePDF(newPage, modDef.degrees.toString());
-                }
-            }
+        let rotation = ((_a = pageDef.modifications) !== null && _a !== void 0 ? _a : []).filter(m => m.type === 'rotate').reduce((sum, m) => sum + m.degrees, 0) % 360;
+        if (rotation < 0)
+            rotation += 360;
+        if (rotation !== 0) {
+            newPage = await ghostscript_node_1.default.rotatePDF(newPage, rotation.toString());
         }
         pages.push(newPage);
     }

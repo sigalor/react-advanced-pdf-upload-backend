@@ -1,6 +1,6 @@
 export type RotateModification = {
   type: 'rotate';
-  degrees: 0 | 90 | 180 | 270;
+  degrees: -90 | 90;
 };
 
 export type Modification = RotateModification;

@@ -1,7 +1,7 @@
 /// <reference types="node" />
 export declare type RotateModification = {
     type: 'rotate';
-    degrees: 0 | 90 | 180 | 270;
+    degrees: -90 | 90;
 };
 export declare type Modification = RotateModification;
 export declare type BuildPdfData = {
