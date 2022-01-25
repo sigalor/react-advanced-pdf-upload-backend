@@ -15,7 +15,7 @@ npm install
 npm start
 ```
 
-Note that this library relies on the [ghostscript-node](https://www.npmjs.com/package/ghostscript-node) component for working with PDFs, so make sure that all its dependencies are installed locally on your system.
+Note that this library relies on the [ghostscript-node](https://www.npmjs.com/package/ghostscript-node) module for working with PDFs, so make sure that all its dependencies are installed locally on your system.
 
 ## Documentation
 
@@ -25,7 +25,7 @@ However, this library is designed to be included in any other sort of NodeJS-bas
 npm install react-advanced-pdf-upload-backend
 ```
 
-Then import the functions like this. The input schemas for the two functions can be found [here](https://github.com/sigalor/react-advanced-pdf-upload-backend/tree/main/src/schemas) and the corresponding TypeScript types are [here](https://github.com/sigalor/react-advanced-pdf-upload-backend/blob/main/src/types.ts).
+Then import the functions like this. The input schemas for the two functions can be found [here](/src/schemas) and the corresponding TypeScript types are [here](/src/types.ts).
 
 ```javascript
 import { methods, schemas } from "react-advanced-pdf-upload-backend";
@@ -38,6 +38,8 @@ import { methods, schemas } from "react-advanced-pdf-upload-backend";
   await methods.buildPdf(...);
 })();
 ```
+
+You can find a simple Express server that works with these components [here](/server/index.js).
 
 ## License
 
