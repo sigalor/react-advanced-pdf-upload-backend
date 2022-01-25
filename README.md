@@ -2,11 +2,11 @@
 
 [![GitHub license](https://img.shields.io/github/license/sigalor/react-advanced-pdf-upload-backend)](https://github.com/sigalor/react-advanced-pdf-upload-backend/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/react-advanced-pdf-upload-backend)](https://www.npmjs.com/package/react-advanced-pdf-upload-backend)
 
-The backend which provides the actual PDF editing functionality for the AdvancedPdfUpload component from react-advanced-pdf-upload-backend.
+The backend which provides the actual PDF editing functionality for the AdvancedPdfUpload component from [react-advanced-pdf-upload](https://github.com/sigalor/react-advanced-pdf-upload).
 
 ## Getting started
 
-Please refer to the readme of the [https://github.com/sigalor/react-advanced-pdf-upload](react-advanced-pdf-upload) repository to see the server-side code from this library in action.
+Please refer to the readme of the [react-advanced-pdf-upload](https://github.com/sigalor/react-advanced-pdf-upload) repository to see the server-side code from this library in action.
 
 For immediately trying this server out, run the following after cloning this repository, which starts a simple server on http://localhost:3001:
 
