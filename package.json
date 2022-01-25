@@ -1,6 +1,6 @@
 {
   "name": "react-advanced-pdf-upload-backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "The backend which provides the actual PDF editing functionality for the AdvancedPdfUpload component from react-advanced-pdf-upload.",
   "main": "dist/index.js",
@@ -19,6 +19,12 @@
     "url": "https://github.com/sigalor/react-advanced-pdf-upload-backend/issues"
   },
   "homepage": "https://github.com/sigalor/react-advanced-pdf-upload-backend#readme",
+  "keywords": [
+    "react",
+    "pdf",
+    "pdf-editing",
+    "documents"
+  ],
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
