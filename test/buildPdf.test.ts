@@ -22,7 +22,7 @@ describe('buildPdf', () => {
         },
         {
           origin: { file: 0, page: 0 },
-          modifications: [{ type: 'rotate', degrees: 180 }],
+          modifications: [{ type: 'rotate', degrees: -90 }],
         },
       ],
     });

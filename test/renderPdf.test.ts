@@ -11,6 +11,6 @@ describe('renderPdf', () => {
   test('works', async () => {
     const pages = (await renderPdf({ file: files['test.pdf'], resolution: 100 })).pages;
     expect(pages.length).toBe(1);
-    expect(pages[0]).toBe(files['test-rendered-res100.png'].toString('base64'));
+    expect(pages[0].uri.split(',')[1]).toBe(files['test-rendered-res100.png'].toString('base64'));
   });
 });
