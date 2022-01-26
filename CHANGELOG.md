@@ -1,3 +1,7 @@
+# 1.0.3 (2022-01-26)
+
+- fix exports
+
 # 1.0.2 (2022-01-26)
 
 - remove unneeded NPM dependencies
