@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "pages"
+  ],
+  "properties": {
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "uri",
+          "dimensions"
+        ],
+        "properties": {
+          "uri": {
+            "type": "string",
+            "description": "Base64-encoded PNG (data URIs, i.e. starts with 'data:image/png;base64,')"
+          },
+          "dimensions": {
+            "type": "object",
+            "required": [
+              "width",
+              "height"
+            ],
+            "properties": {
+              "width": {
+                "type": "number",
+                "minimum": 0
+              },
+              "height": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -71,5 +71,39 @@ declare const _default: {
             };
         };
     };
+    renderPdfOutput: {
+        type: string;
+        required: string[];
+        properties: {
+            pages: {
+                type: string;
+                minItems: number;
+                items: {
+                    type: string;
+                    required: string[];
+                    properties: {
+                        uri: {
+                            type: string;
+                            description: string;
+                        };
+                        dimensions: {
+                            type: string;
+                            required: string[];
+                            properties: {
+                                width: {
+                                    type: string;
+                                    minimum: number;
+                                };
+                                height: {
+                                    type: string;
+                                    minimum: number;
+                                };
+                            };
+                        };
+                    };
+                };
+            };
+        };
+    };
 };
 export default _default;
