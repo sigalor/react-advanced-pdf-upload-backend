@@ -14,6 +14,7 @@ export type BuildPdfData = {
     };
     modifications?: Modification[];
   }[];
+  name?: string;
 };
 
 export type RenderPdfData = {

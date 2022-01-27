@@ -54,6 +54,10 @@ declare const _default: {
                     };
                 };
             };
+            name: {
+                type: string;
+                description: string;
+            };
         };
     };
     renderPdf: {

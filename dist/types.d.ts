@@ -13,6 +13,7 @@ export declare type BuildPdfData = {
         };
         modifications?: Modification[];
     }[];
+    name?: string;
 };
 export declare type RenderPdfData = {
     file: string | Buffer;
