@@ -1,3 +1,7 @@
+# 1.0.5 (2022-06-07)
+
+- update ghostscript-node to 1.4.0
+
 # 1.0.4 (2022-01-27)
 
 - add `name` property to `buildPdf` input data schema
