@@ -26,7 +26,7 @@
     "documents"
   ],
   "dependencies": {
-    "ghostscript-node": "^1.3.1",
+    "ghostscript-node": "^1.4.0",
     "image-size": "^1.0.1"
   },
   "devDependencies": {

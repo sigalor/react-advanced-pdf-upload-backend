@@ -1,4 +1,4 @@
-import gs from 'ghostscript-node';
+import * as gs from 'ghostscript-node';
 import imageSize from 'image-size';
 import { RenderPdfData, RenderPdfOutput } from '../types';
 

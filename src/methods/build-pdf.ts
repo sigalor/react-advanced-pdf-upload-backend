@@ -1,4 +1,4 @@
-import gs from 'ghostscript-node';
+import * as gs from 'ghostscript-node';
 import { BuildPdfData } from '../types';
 
 export default async function buildPdf(data: BuildPdfData): Promise<Buffer> {
