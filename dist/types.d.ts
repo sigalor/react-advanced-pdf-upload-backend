@@ -1,10 +1,10 @@
 /// <reference types="node" />
-export declare type RotateModification = {
+export type RotateModification = {
     type: 'rotate';
     degrees: -90 | 90;
 };
-export declare type Modification = RotateModification;
-export declare type BuildPdfData = {
+export type Modification = RotateModification;
+export type BuildPdfData = {
     files: (string | Buffer)[];
     pages: {
         origin: {
@@ -15,11 +15,11 @@ export declare type BuildPdfData = {
     }[];
     name?: string;
 };
-export declare type RenderPdfData = {
+export type RenderPdfData = {
     file: string | Buffer;
     resolution: number;
 };
-export declare type RenderPdfOutput = {
+export type RenderPdfOutput = {
     pages: {
         uri: string;
         dimensions: {
