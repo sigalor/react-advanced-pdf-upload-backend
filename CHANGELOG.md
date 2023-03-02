@@ -1,3 +1,7 @@
+# 1.1.0 (2023-03-02)
+
+- update NPM dependencies
+
 # 1.0.5 (2022-06-07)
 
 - update ghostscript-node to 1.4.0
